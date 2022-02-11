@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@500&display=swap');
+
+:root{
+    --Preto-01:#16171E;
+    --Preto-02:#1F212A;
+    --Preto-03:#58585E;
+}
+
+*{margin: 0px; padding: 0px; box-sizing: border-box; font-family: 'Inter', sans-serif; font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;}
+*, button, input{
+    border: 0;
+    background: none;
+}
+
+body{
+    background-color: var(--Preto-01);
+    color: white;
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+#box{
+    width: min(700px,100vw);
+}
