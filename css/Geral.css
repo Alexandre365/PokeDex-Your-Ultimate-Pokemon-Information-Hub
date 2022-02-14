@@ -8,7 +8,7 @@
 
 *{margin: 0px; padding: 0px; box-sizing: border-box; font-family: 'Inter', sans-serif; font-family: 'Nunito', sans-serif;
     font-family: 'Roboto', sans-serif;}
-*, button, input{
+*, button{
     border: 0;
     background: none;
 }
