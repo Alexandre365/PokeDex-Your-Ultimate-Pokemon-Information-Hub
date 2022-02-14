@@ -62,9 +62,7 @@ const FetchPokemon = () =>{
                     return accumulator 
                    },'') 
             }
-            
         })   
-       
 }
 
 FetchPokemon()
