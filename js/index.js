@@ -11,6 +11,11 @@ var IdNumero = (id) =>{
     }
 }
 
+function clr(id) {
+    localStorage.setItem('IdPoke',id)
+    location.href = 'Poke.html'
+}
+
 const FetchPokemon = () =>{
     const getPokemonUrl= id => `https://pokeapi.co/api/v2/pokemon/${id}`
 

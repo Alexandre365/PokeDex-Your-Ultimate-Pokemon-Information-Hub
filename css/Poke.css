@@ -1,0 +1,75 @@
+header{
+    display: flex;
+    justify-content: center;
+}
+    .box{
+        width: min(700px,100vw);
+    }
+        .Header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+            .Header img{
+                cursor: pointer;
+            }
+            .Header h1{
+                font-size: 20px;
+            }
+
+        .DadosTitle {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+            .DadosTitle div h2{
+                width: 50px;
+                border-bottom: 5px solid snow;
+            }
+            .DadosTitle div p{
+                font-size: 17px;
+            }
+        .DadosImg{
+            display: flex;
+            justify-content: center;
+        }
+            .DadosImg img{
+                width: min(250px,100vw);
+            }
+
+main{
+    display: flex;
+    justify-content: center;
+}
+    .Sobre{
+        padding: 10px;
+    }
+    .Sobre h2{
+        padding: 10px 0px;
+    }
+
+    .EstaDeBase{
+        padding: 10px;
+    }
+    .EstaDeBase h2{
+        padding: 10px 0px;
+    }
+    .Mov{
+        padding: 10px;
+    }
+    .Mov h2{
+        padding: 10px 0px;
+    }
+
+    .res{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .res{
+            display: flex;
+            flex-direction: column;
+        }
+    }
