@@ -45,22 +45,27 @@ main{
     .Sobre{
         padding: 10px;
     }
-    .Sobre h2{
-        padding: 10px 0px;
-    }
+        .Sobre h2{
+            padding: 10px 0px;
+        }
+        .TxtSobre{
+            height: min(250px,100%);
+            overflow: auto;
+        }
 
     .EstaDeBase{
         padding: 10px;
     }
-    .EstaDeBase h2{
-        padding: 10px 0px;
-    }
+        .EstaDeBase h2{
+            padding: 10px 0px;
+        }
+
     .Mov{
         padding: 10px;
     }
-    .Mov h2{
-        padding: 10px 0px;
-    }
+        .Mov h2{
+            padding: 10px 0px;
+        }
 
     .res{
         display: flex;
@@ -72,4 +77,9 @@ main{
             display: flex;
             flex-direction: column;
         }
+        .TxtSobre{
+            height: 100px;
+            overflow: auto;
+        }
+
     }
