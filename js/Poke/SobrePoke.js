@@ -1,11 +1,11 @@
 // Funcões Gerais 
 //função de UpperCase
-export let  Name = (str) =>{
+let  Name = (str) =>{
     return str[0].toUpperCase() + str.substr(1)
 }
 
 //Função do id do pokémon
-export let  NubId = (id) =>{
+let  NubId = (id) =>{
     if (id.id < 10) {
         return `#00${id.id}`
     }else if (id.id > 10 && id.id < 100) {
@@ -16,7 +16,7 @@ export let  NubId = (id) =>{
 }
 
 // função de type
-export let type = (id) => {
+let type = (id) => {
     if (id.types.length == 1) {
         return `${Name(id.types[0].type.name)}
         `
@@ -29,7 +29,7 @@ export let type = (id) => {
 
 
 //localização do pokemon
-export let LocationPoke = (id) =>{
+let LocationPoke = (id) =>{
     let Locat = `${id.location_area_encounters}`
     fetch(Locat)
     .then(Response => Response.json())
@@ -50,11 +50,22 @@ export let LocationPoke = (id) =>{
 }
 
 // Jogos onde encontramos os pokémon
-export let JogosPoke = (id) =>{
+let JogosPoke = (id) =>{
     document.getElementById('TxtSobre').innerHTML += ` está disponivel nos jogos: 
     ${id.game_indices.reduce((accumulator, pokemons)=>{
         accumulator += ` ${pokemons.version.name},`
         return accumulator
     },'')}
     `
+}
+
+export let Sobre = id => {
+    document.getElementById('TxtSobre').innerHTML += `
+    ${Name(id.name)} do tipo ${type(id)},
+    `
+    LocationPoke(id)
+    setTimeout(() => {
+        JogosPoke(id)
+    }, 90);
+
 }

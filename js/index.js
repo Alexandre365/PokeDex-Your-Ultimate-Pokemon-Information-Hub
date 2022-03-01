@@ -1,5 +1,9 @@
 import {Name,IdNumero,ListCard, ultimo} from './index/FuncoesIndex.js'
 
+document.getElementById('btn-search').onclick = () =>{
+    document.getElementById('search').style.display = 'inline'
+    document.getElementById('btn-search').style.display = 'none'
+}
 
 
 const FetchPokemon = () =>{
@@ -27,6 +31,7 @@ const FetchPokemon = () =>{
                 </div>`
                 return accumulator
             },'')
+            document.getElementById('loading').style.display = 'none'
             const input = document.getElementById('search');
             input.addEventListener('input', updateValue);
 

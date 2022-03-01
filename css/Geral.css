@@ -74,7 +74,7 @@
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
+    background: #242424; 
   }
 
 body{
@@ -87,5 +87,5 @@ body{
 }
 
 #box{
-    width: min(1000px,100vw);
+    width: min(1200px,100vw);
 }

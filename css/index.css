@@ -1,84 +1,89 @@
 header{
     background-color: var(--Preto-01);
     position: fixed;
-    top: 0;
-    width: min(1000px,100vw);
-    height: 50px;
-    padding: 30px 0px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
-/* input */
-header > div{
+header div{
+    width: min(600px,100%);
     padding: 10px;
 }
-    .div-input{
-        width: min(600px,100%);
-    }
-        .div-input > input{
-            width: 100%;
-            padding: 10px;
-            border: 3px solid var(--Preto-02);
-            border-radius: 10px;
-            color: rgb(214, 213, 213);
-        }
-
-main{
-    margin-top: 60px;
+.div-input{
+    display: flex;
+    justify-content: end;
+}
+.div-input input{
+    width: 100%;
+    color: white;
+    border: 2px solid var(--Preto-02);
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn-search{
+    width: auto;
 }
 
+
+/* Corpo */
+main{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+main div{
+    width: min(1200px,100%);
+}
 h2{
-    font-size: 16px;
-    margin: 15px 0px 0px 10px; 
+    padding: 10px;
 }
 
 /* Card */
 .Card{
     width: 100%;
     padding: 10px;
+    cursor: pointer;
 }
     .Card-poke{
         display: flex;
-        align-items: center;
         background-color: var(--Preto-02);
         border-radius: 20px;
-        cursor: pointer;
     }
 
 /* Img */
 .card-poke-img{
-    padding: 10px ;
+    width: auto;
+    padding: 10px;
 }
-    .card-poke-img > img{
-        width: 80px;
-        height: 80px;
-        padding: 10px;
-        background-color: var(--Preto-01);
-        border-radius: 100% ;
-    }
+
+.card-poke-img img{
+    width: 100px;
+    background-color: var(--Preto-01);
+    border-radius: 100%;
+    padding: 5px;
+}
 
 /* Txt */
 .card-txt{
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-    .card-txt > h2{
-    font-size: 20px;
-    }
-
-    .card-txt > p{
-        font-size: 16px;
-        text-align: left;
-        color: var(--Preto-03);
-    }
+.card-txt p {
+    font-size: 16px;
+    color: var(--Preto-03);
+}
 
 /* Loading */
 .loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 400px;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
-    min-height: 100vh;
-    margin: 50px;
+    align-items: flex-end;
 }
     .load{
         animation: is-rotatig 1s linear infinite;
@@ -94,10 +99,15 @@ h2{
         transform: rotate(360deg);
     }
 }
+@media only screen and (max-width: 700px){
+    .div-input input{
+        display: none;
+    }
+}
 @media only screen and (min-width: 700px) {
     .List-Card{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
     }
     .Card-max1000 > div{
         height: 170px;
@@ -112,5 +122,7 @@ h2{
     .Card-max1000 div > p{
         font-size: 25px;
     }
-
+    .btn-search{
+        display: none;
+    }
 }

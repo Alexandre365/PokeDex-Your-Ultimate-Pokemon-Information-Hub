@@ -29,6 +29,7 @@ export let ListCard = (e,pokemons) =>{
         </div>`
         return accumulator 
        },'') 
+       
 }
 
 export let ultimo = () =>{
