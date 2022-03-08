@@ -43,7 +43,7 @@ main{
     justify-content: center;
 }
     .Sobre{ 
-        height: auto;
+        height: 100px;
         padding: 0px 10px ;
     }
         .Sobre h2{
