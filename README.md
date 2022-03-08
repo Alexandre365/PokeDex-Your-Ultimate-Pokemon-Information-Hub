@@ -7,9 +7,11 @@
 <img src="img/Captura de tela 2022-03-08 063229.png">
 
 ### Smartphone
+<div>
 <img src="img/Captura de tela 2022-03-08 063032.png">
 <img src="img/Captura de tela 2022-03-08 063010.png">
 <img src="img/Captura de tela 2022-03-08 062918.png">
+</div>
 
 <h2>Tecnologias utilizadas</h2>
  <div  align="center"><br>
