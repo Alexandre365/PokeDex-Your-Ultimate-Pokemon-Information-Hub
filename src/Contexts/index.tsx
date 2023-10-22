@@ -19,7 +19,7 @@ const PokeDataProvider = ({children}: Data ) =>{
 
   const Load = async () =>{
     let ary: any[] = []
-    for (let index = 1; index <= 150; index++) {
+    for (let index = 1; index <= 151; index++) {
       await config.get(`pokemon/${index}`)
       .then((response) =>{
         ary.push(response.data)

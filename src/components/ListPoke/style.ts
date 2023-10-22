@@ -57,19 +57,45 @@ export const Container = styled.div`
 `
 export const Cards= styled.div`
   max-width: 100%;
+  height: 100vh;
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding-bottom: 2rem;
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
 `
 
 export const Card = styled.div`
+  height: 6.5rem;
+  display: flex;
   background-color: ${(prop) => resolveColor(prop.color) || '#5B5B5B'};
   padding: 0.5rem;
   border-radius: 1rem;
+  margin-bottom: 1rem;
 
   h2{
     color: white;
+  }
+`
+
+export const Cont = styled.div`
+  width: 100%;
+`
+export const ImgBox = styled.div`
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: relative;
+  top: 4rem;
+  left: 1.5rem;
+
+  img{
+    width: 10rem;
+    height: 10rem;
   }
 `
 

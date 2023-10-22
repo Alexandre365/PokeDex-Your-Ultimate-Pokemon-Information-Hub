@@ -2,11 +2,14 @@ import { useState, useContext } from 'react'
 import { DataContext } from './Contexts'
 import { Container, Box, Header, Title, Form, Main, Aside,  Selects, Search } from './Style'
 import Select from './components/Selects'
+import { AsidePokemon } from './components/AsidePokemon'
 import {List} from './components/ListPoke'
+
 
 function App() {
   const {poke, Load} = useContext(DataContext)
-  const [Asid] = useState<String>('50rem')
+  const [Asid, setAsid] = useState<String>('50rem')
+  const [_id, set_id] = useState<number>(0)
 
   Load()
 
@@ -32,8 +35,8 @@ function App() {
           </Form>
         </Header>
         <Main >
-          <List users={poke} />
-          <Aside title={`${Asid}`}></Aside>
+          <List users={poke} Aside={setAsid} _id={set_id} />
+          <Aside title={`${Asid}`}><AsidePokemon Poke={poke} id={_id} /></Aside>
         </Main>
       </Box>
     </Container>

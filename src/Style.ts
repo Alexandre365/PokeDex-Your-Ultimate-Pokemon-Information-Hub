@@ -35,10 +35,9 @@ export const Search = styled.div`
   }
 `
 export const Selects = styled.div`
-  margin-top: 1rem;
-  width: 40rem;
-  display: flex;
-  justify-content: space-between;
+  overflow: auto;
+  white-space: nowrap;
+
 
   select{
     background-color: #F9F9F9;
@@ -48,6 +47,7 @@ export const Selects = styled.div`
     border-radius: 0.5rem;
     padding: 0.3rem;
     width: 10rem;
+    margin: 1rem 1rem 1rem 0rem;
   }
   button{
     background-color: #F9F9F9;
@@ -58,6 +58,11 @@ export const Selects = styled.div`
     padding: 0.3rem;
     width: 5rem;
   }
+  @media (max-width: 768px) {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
 `
 
 export const Main = styled.main`
@@ -65,8 +70,8 @@ export const Main = styled.main`
 `
 export const Aside = styled.aside`
   width: 70%;
-  height: 20rem;
-  background-color: black;
+  display: flex;
+  justify-content: center;
   @media (max-width: 768px) {
     position: fixed;
     top: 0;
