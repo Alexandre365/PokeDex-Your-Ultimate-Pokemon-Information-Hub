@@ -137,6 +137,10 @@ Error generating stack: `+i.message+`
     align-items: center;
     margin: 1rem;
     font-size: 2rem;
+
+    @media (min-width: 768px) {
+      display: none;
+  }
   }
 
 `,d1=q.div`
@@ -193,11 +197,11 @@ Error generating stack: `+i.message+`
   @media (min-width: 768px) {
     right: 1rem;
   }
-`,m1=e=>{if(e<10)return`#00${e}`;if(e<100)return`#0${e}`;if(e>100)return`#${e}`},y1=e=>e[0].toUpperCase()+e.slice(1),g1=({Poke:e,id:t,Aside:n})=>{let r=()=>t-1;return A.jsxs(f1,{children:[A.jsx("span",{onClick:()=>n("50rem"),children:"X"}),A.jsxs(d1,{color:t!=0?`${e[r()].types[0].type.name}`:"#fffffff",children:[A.jsxs(p1,{children:[A.jsx(h1,{children:m1(t)}),A.jsx("h3",{children:y1(e[r()].name)})]}),A.jsx("img",{src:e[r()].sprites.front_default,alt:""})]}),A.jsx("p",{children:"odosodas"})]})},v1=e=>{if(e=="grass")return"#36C490";if(e=="fire")return"#D93F31";if(e=="water")return"#1790FF";if(e=="electric")return"#ECD145";if(e=="flaying")return"#A890F0";if(e=="normal")return"#A7A678";if(e=="rock")return"#B8A038";if(e=="ground")return"#E0C068";if(e=="bug")return"#A8B820";if(e=="ice")return"#98D8D8";if(e=="psychic")return"#F85888";if(e=="dark")return"#705848";if(e=="ghost")return"#705898";if(e=="dragon")return"#7038F8";if(e=="fairy")return"#F0B6BC";if(e=="poison")return"#9D63B5"},w1=q.div`
+`,m1=e=>{if(e<10)return`#00${e}`;if(e<100)return`#0${e}`;if(e>100)return`#${e}`},y1=({Poke:e,id:t,Aside:n})=>{const r=()=>{let o=e!=null?e.name:"undefined";return o[0].toUpperCase()+o.slice(1)};return A.jsxs(f1,{children:[A.jsx("span",{onClick:()=>n("50rem"),children:"X"}),A.jsxs(d1,{color:t!=0?`${e.types[0].type.name}`:"#fffffff",children:[A.jsxs(p1,{children:[A.jsx(h1,{children:m1(t)}),A.jsx("h3",{children:r()})]}),A.jsx("img",{src:t!=0?`${e.sprites.front_default}`:"",alt:""})]}),A.jsx("p",{children:"odosodas"})]})},g1=e=>{if(e=="grass")return"#36C490";if(e=="fire")return"#D93F31";if(e=="water")return"#1790FF";if(e=="electric")return"#ECD145";if(e=="flaying")return"#A890F0";if(e=="normal")return"#A7A678";if(e=="rock")return"#B8A038";if(e=="ground")return"#E0C068";if(e=="bug")return"#A8B820";if(e=="ice")return"#98D8D8";if(e=="psychic")return"#F85888";if(e=="dark")return"#705848";if(e=="ghost")return"#705898";if(e=="dragon")return"#7038F8";if(e=="fairy")return"#F0B6BC";if(e=="poison")return"#9D63B5"},v1=q.div`
   width: 100%;
   height: 20rem;
   margin: 1rem;
-`,S1=q.div`
+`,w1=q.div`
   max-width: 100%;
   height: 100vh;
   display: grid;
@@ -209,10 +213,10 @@ Error generating stack: `+i.message+`
     overflow-x: hidden;
     overflow-y: scroll;
   }
-`,k1=q.div`
+`,S1=q.div`
   height: 6.5rem;
   display: flex;
-  background-color: ${e=>v1(e.color)||"#5B5B5B"};
+  background-color: ${e=>g1(e.color)||"#5B5B5B"};
   padding: 0.5rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -220,9 +224,9 @@ Error generating stack: `+i.message+`
   h2{
     color: white;
   }
-`,E1=q.div`
+`,k1=q.div`
   width: 100%;
-`,x1=q.div`
+`,E1=q.div`
   display: flex;
   justify-content: end;
   align-items: end;
@@ -234,7 +238,7 @@ Error generating stack: `+i.message+`
     width: 10rem;
     height: 10rem;
   }
-`,C1=q.div`
+`,x1=q.div`
   position: relative;
   bottom: 1rem;
   right: 1.2rem;
@@ -257,4 +261,4 @@ Error generating stack: `+i.message+`
     border-radius: 0.2rem;
     margin-right: 0.5rem;
   }
-`,_1=e=>{if(e<10)return`#00${e}`;if(e<100)return`#0${e}`;if(e>100)return`#${e}`},P1=e=>e[0].toUpperCase()+e.slice(1),N1=({users:e,Aside:t,_id:n})=>A.jsx(w1,{children:A.jsx(S1,{children:e.map((r,o)=>A.jsxs(k1,{color:r.types[0].type.name,onClick:()=>{t("0rem"),n(r.id)},children:[A.jsxs(E1,{children:[A.jsx(C1,{children:_1(r.id)}),A.jsx("h2",{children:P1(r.name)}),r.types.length==1?A.jsx(lc,{children:A.jsx("div",{children:r.types[0].type.name})}):A.jsxs(lc,{children:[A.jsx("div",{children:r.types[0].type.name}),A.jsx("div",{children:r.types[1].type.name})]})]}),A.jsx(x1,{children:A.jsx("img",{src:r.sprites.front_default,alt:"Lamp",width:"32",height:"32"})})]},o))})});function R1(){const{poke:e,Load:t}=nt.useContext(Ud),[n,r]=nt.useState("50rem"),[o,i]=nt.useState(0);return t(),A.jsx(t1,{children:A.jsxs(n1,{children:[A.jsxs(r1,{children:[A.jsxs(o1,{children:[A.jsx("h2",{children:"Pokédex"}),A.jsx("p",{children:"Use the advanced search to find pokémon by type , weaknes, ability and movre"})]}),A.jsxs(i1,{children:[A.jsx(l1,{children:A.jsx("input",{type:"text",name:"Search",id:"",placeholder:"Search pokémon"})}),A.jsxs(s1,{children:[A.jsx(vl,{i:["Type","Normal","Fighting","Flying","Poison","Ground","Rock","Bug","Ghost","Steel","Fire","Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy"]}),A.jsx(vl,{i:["Generation"]}),A.jsx(vl,{i:["Game"]}),A.jsx("button",{children:"Load"})]})]})]}),A.jsxs(u1,{children:[A.jsx(N1,{users:e,Aside:r,_id:i}),A.jsx(a1,{title:`${n}`,children:A.jsx(g1,{Poke:e,id:o,Aside:r})})]})]})})}wl.createRoot(document.getElementById("root")).render(A.jsx(An.StrictMode,{children:A.jsx(q0,{children:A.jsx(R1,{})})}));
+`,C1=e=>{if(e<10)return`#00${e}`;if(e<100)return`#0${e}`;if(e>100)return`#${e}`},_1=e=>e[0].toUpperCase()+e.slice(1),P1=({users:e,Aside:t,_id:n})=>A.jsx(v1,{children:A.jsx(w1,{children:e.map((r,o)=>A.jsxs(S1,{color:r.types[0].type.name,onClick:()=>{t("0rem"),n(r.id)},children:[A.jsxs(k1,{children:[A.jsx(x1,{children:C1(r.id)}),A.jsx("h2",{children:_1(r.name)}),r.types.length==1?A.jsx(lc,{children:A.jsx("div",{children:r.types[0].type.name})}):A.jsxs(lc,{children:[A.jsx("div",{children:r.types[0].type.name}),A.jsx("div",{children:r.types[1].type.name})]})]}),A.jsx(E1,{children:A.jsx("img",{src:r.sprites.front_default,alt:"Lamp",width:"32",height:"32"})})]},o))})});function N1(){const{poke:e,Load:t}=nt.useContext(Ud),[n,r]=nt.useState("50rem"),[o,i]=nt.useState(0);return t(),A.jsx(t1,{children:A.jsxs(n1,{children:[A.jsxs(r1,{children:[A.jsxs(o1,{children:[A.jsx("h2",{children:"Pokédex"}),A.jsx("p",{children:"Use the advanced search to find pokémon by type , weaknes, ability and movre"})]}),A.jsxs(i1,{children:[A.jsx(l1,{children:A.jsx("input",{type:"text",name:"Search",id:"",placeholder:"Search pokémon"})}),A.jsxs(s1,{children:[A.jsx(vl,{i:["Type","Normal","Fighting","Flying","Poison","Ground","Rock","Bug","Ghost","Steel","Fire","Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy"]}),A.jsx(vl,{i:["Generation"]}),A.jsx(vl,{i:["Game"]}),A.jsx("button",{children:"Load"})]})]})]}),A.jsxs(u1,{children:[A.jsx(P1,{users:e,Aside:r,_id:i}),A.jsx(a1,{title:`${n}`,children:A.jsx(y1,{Poke:e[o-1],id:o,Aside:r})})]})]})})}wl.createRoot(document.getElementById("root")).render(A.jsx(An.StrictMode,{children:A.jsx(q0,{children:A.jsx(N1,{})})}));
