@@ -120,8 +120,8 @@ Error generating stack: `+i.message+`
   flex-direction: column;
   justify-content: space-between ;
 `;function wl({i:e}){return T.jsx("select",{name:"Type",id:"",children:e.map((t,n)=>T.jsx("option",{value:t,children:t},n))})}const up=e=>{if(e=="grass")return"#36C490";if(e=="fire")return"#D93F31";if(e=="water")return"#1790FF";if(e=="electric")return"#ECD145";if(e=="flying")return"#A890F0";if(e=="normal")return"#A7A678";if(e=="rock")return"#B8A038";if(e=="ground")return"#E0C068";if(e=="bug")return"#A8B820";if(e=="ice")return"#98D8D8";if(e=="psychic")return"#F85888";if(e=="dark")return"#705848";if(e=="ghost")return"#705898";if(e=="dragon")return"#7038F8";if(e=="fairy")return"#F0B6BC";if(e=="poison")return"#9D63B5"},d1=V.div`
-  width: 97%;
-  height: 100%;
+  width: 100%;
+  height: 105%;
   background-color: white;
 
   @media (min-width: 768px) {
@@ -152,6 +152,7 @@ Error generating stack: `+i.message+`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0rem 1.5rem;
 
   img{
     position: relative;
@@ -163,6 +164,7 @@ Error generating stack: `+i.message+`
     position: relative;
     top: 0;
     bottom: 0;
+    margin: 0rem 0rem;
   }
 
 
@@ -184,7 +186,7 @@ Error generating stack: `+i.message+`
 `,m1=V.div`
   position: relative;
   bottom: 1rem;
-  right: 0rem;
+  right: 1rem;
   width: 3rem;
   height: 1.875rem;
   border-radius: 0.3rem;
@@ -199,10 +201,14 @@ Error generating stack: `+i.message+`
   }
 `,y1=V.div`
   position: relative;
-  top: 1rem;
+  top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 768px) {
+    top: 1rem;
+  }
 
   p{
     width: 90%;
