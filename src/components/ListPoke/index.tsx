@@ -44,12 +44,12 @@ export  const List: React.FC<{ users: UserArray, Aside: Function, _id: Function 
                 </h2>
                   {i.types.length == 1 ? (
                     <TypePoke>
-                      <div>{i.types[0].type.name}</div>
+                      <div>{Uppercase(i.types[0].type.name)}</div>
                     </TypePoke>
                   ):(
                     <TypePoke>
-                      <div>{i.types[0].type.name}</div>
-                      <div>{i.types[1].type.name}</div>
+                      <div>{Uppercase(i.types[0].type.name)}</div>
+                      <div>{Uppercase(i.types[1].type.name)}</div>
                     </TypePoke>
                   )}
               </Cont>

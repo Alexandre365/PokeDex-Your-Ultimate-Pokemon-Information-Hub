@@ -119,9 +119,10 @@ export const TypePoke = styled.div`
   padding: 0.5rem 0rem;
   div{
     padding: 0.3rem 1rem;
+    font-weight: 700;
     color:white;
     background-color:rgba(0, 0, 0, 0.12);
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
     margin-right: 0.5rem;
   }
 `

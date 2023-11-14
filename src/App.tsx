@@ -36,7 +36,7 @@ function App() {
         </Header>
         <Main >
           <List users={poke} Aside={setAsid} _id={set_id} />
-          <Aside title={`${Asid}`}><AsidePokemon Poke={poke} id={_id} /></Aside>
+          <Aside title={`${Asid}`}><AsidePokemon Poke={poke[_id - 1]} id={_id} Aside={setAsid}/></Aside>
         </Main>
       </Box>
     </Container>
