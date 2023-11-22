@@ -86,7 +86,9 @@ export const AsidePokemon : React.FC<{ Poke: User, id: number, Aside: Function }
         </Status>
         <Evolutions>
           <h3>EVOLUTIONS</h3>
-          <Evol i={id} />
+          {
+            id != 0 ? <Evol i={id} col={id != 0 ? `${Poke.types[0].type.name}` : `#fffffff`} /> : <p></p>
+          }
         </Evolutions>
       </Box>
     </Container>

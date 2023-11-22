@@ -80,7 +80,7 @@ export const BoxImg = styled.div`
   position: relative;
   top: 1.3rem;
   background-color: ${(prop) => resolveColor(prop.color) || '#5B5B5B'};
-  height: 8rem;
+  height: 7rem;
   border-radius: 1rem ;
   display: flex;
   flex-direction: column;
@@ -113,7 +113,7 @@ export const BoxImgTxt = styled.div`
     justify-content: center;
     position: relative;
     right: 1.5rem;
-    top: 4.8rem;
+    top: 4rem;
     font-size: 2rem;
     color: white;
   }
@@ -207,10 +207,15 @@ export const Stat = styled.div`
 `
 
 export const Evolutions = styled.div`
+  width: 90%;
+  height: 5rem;
   position: relative;
   top: 3.8rem;
 
   h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     font-weight: 800;
   }
 `
