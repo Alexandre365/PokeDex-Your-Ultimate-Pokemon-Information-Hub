@@ -1,27 +1,42 @@
-# React + TypeScript + Vite
+# 📱 Pokédex com PokeAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma Pokédex interativa que consome dados da [PokeAPI](https://pokeapi.co/).  
+Com ela é possível pesquisar e visualizar informações sobre diferentes Pokémon, como nome, imagem, tipo, habilidades e estatísticas.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
+- **HTML, CSS,  TypeScript** para estrutura, estilo e interatividade  
+- **React.js, Vite** (ou outra lib/framework, caso use) para criação de componentes dinâmicos  
+- **Fetch API / Axios** para consumo da PokeAPI  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ⚙️ Funcionalidades
+- 🔍 Pesquisar Pokémon pelo nome ou número da Pokédex  
+- 📊 Exibir informações detalhadas como:
+  - Nome
+  - Imagem oficial
+  - Tipos
+  - Habilidades
+  - Estatísticas base (HP, Ataque, Defesa, etc.)
+- 🔄 Navegar entre Pokémon anteriores e seguintes
+- 📱 Layout responsivo
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## 💻 Web site: https://alexandre365.github.io/PokeDex-Your-Ultimate-Pokemon-Information-Hub/
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 📦 Instalação e Uso
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/pokedex.git
+
+# Acesse a pasta do projeto
+cd pokedex
+
+# Instale as dependências (se for React ou Node)
+npm install
+
+# Execute o projeto
+npm start
